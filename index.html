@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>MyPortfolio-Kartik Khanna</title>
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    header{
+      background: url(img/bg.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height:550px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 600px;
+      }
+      .IntroText{
+      margin-top: 5rem;
+      margin-left: 2rem !important;
+       font-size:3rem;
+    }
+      #imageskill{
+        margin-top: 2.5rem;
+      }
+      #imageweb{
+        margin-top: 2.5rem;
+      }
+     
+      .margininc{
+        margin-bottom:2px !important;
+      }
+      /* .alignquest{
+        margin-right: 7rem;
+      } */
+      .marginlinks{
+          margin-left: 2.8rem;
+      }
+       .myimage{
+         margin-right: 2.5rem !important;
+       }
+    }
+    @media screen and (min-width: 400px){
+    .myimage{
+      margin-left:5rem;
+    } 
+    }
+  
+    .margininc{
+        margin-bottom:100px ;
+      }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #1a237e;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+    .IntroText{
+      color:white;
+     margin-top: 5rem;
+    margin-left: 8rem;
+      font-size:3rem;
+}
+.brand-logo img{
+  height: 65px;
+ 
+}
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo center"><img src="img/my.png" alt=""></a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://www.instagram.com/kartik_khanna0406/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="https://github.com/kartik0406" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Github">
+            <i class="fab fa-github"></i>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/kartik-khanna-b58914143/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Linked">
+            <i class="fab fa-linkedin"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="col s12 m6 l9">
+      <div class="container left">
+        <h1 id="Hello" class="IntroText"></h1>
+        <h1 id="Name" class="IntroText"></h1>
+      </div>
+      
+    </div>
+    
+  </header>
+
+ 
+    <!-- Intro closed -->
+
+
+  <!-- Skills -->
+  <section class="container section scrollspy" id="skills">
+    <h1 class="indigo-text text-darken-4">Skills</h1>
+    <div class="row marginless">
+      <div class="col s12 l4" id="imageweb">
+          <img src="img/web.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 margininc">
+        <h2 class="indigo-text text-darken-4">Web Development</h2>
+        <p style="margin-left: 0.6rem;">Making responsive, robust and full stack websites.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/android.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align margininc ">
+        <h2 class="indigo-text text-darken-4">Android Development</h2>
+        <p>Latest Android technology used to enhance app.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/programming.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text text-darken-4">Programming</h2>
+        <p>Methodical and efficient approach to problem Solving.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/banner1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <!-- Experience -->
+  <section class="container section scrollspy" id="experience">
+    <h1 class="indigo-text text-darken-4">Experience</h1>
+    <div class="row">
+      <div class="col s12 l4" id="imageskill">
+          <img src="img/skillship.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 margininc">
+        <span style="font-size: 2rem;">Skillship Foundation</span>
+        <h2 class="indigo-text text-darken-4">Web Development Intern</h2>
+        <p style="margin-left: 0.6rem;">Here I development code snippet website: Snipcode using Html Css and JavaScript</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/club.jpeg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 right-align margininc">
+        <span style="font-size: 2rem;" class="alignquest">Innovators Quest</span>
+        <h2 class="indigo-text text-darken-4">Web Designer</h2>
+        <p>Here I help in creating UX/UI, Web illustrations for various events happening in VIT Vellore.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/hbr.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <span style="font-size: 2rem;">Harvard Business Review</span>
+        <h2 class="indigo-text text-darken-4">HBR Ascend Select Member</h2>
+        <p>HBR Ascend Select is an exclusive and an invite-only community of aspiring leaders, handpicked by HBR Ascend. As a member, I get the opportunity to share my views and opinions with the editorial, marketing and product teams of HBR Ascend. I also participate in various research projects led by HBR Ascend</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+    <!-- hobbies -->
+  <section class="section container scrollspy" id="hobbies">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do..</h2>
+        <p> Hobbies are a great way to relax and unwind. These are done after a stressful day at school, college, or office. There is no rule of what can be termed as a hobby.</p>
+        
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#songs" class="active indigo-text text-darken-4">Listen Songs</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#programming" class="indigo-text text-darken-4">programming</a>
+          </li>
+        </ul>
+        <div id="songs" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Songs</p>
+            <p>Music is one of the most important and powerful things in my life. My life without melodies and harmonies would be totally empty. Listening to and playing different tunes helps me to de-stress, relax and it can also help to motivate me in trying times. </p>
+            
+        </div>
+        <div id="programming" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Programming</p>
+            <p>I Practice and enhance my programming skills on various coding platforms.</p>
+            <p>“ Good code is its own best documentation. As you're about to add a comment, ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer. ”- Steve McConnell</p>
+           
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/stars.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+   
+
+  <footer class="page-footer grey darken-4">
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col l7 s12">
+          <h5>About Me</h5>
+          <p>
+            A motivated, adaptable and responsible student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology.
+            I have a methodical, research approach to work and a strong drive to see things through to completion.
+            I love to Code and design various innovative projects and keen to gain knowledge and learn new and different things from the sources which I explore.
+          </p>
+            <p> "The beautiful thing about learning is that nobody can take it away from you."</p>
+    
+        </div>
+       
+          <img src="img/kartik.jpg" alt="" style="margin-bottom:1.2rem;" class="myimage">
+    
+      </div>
+    </div>
+    
+  </footer>
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+        <p>Working with someone has always been fun for me. Want to make something cool together? </p>
+        <h4 style="margin-left: 2rem;"><span class="amber-text accent-4">Hit</span> me up</h4>
+        <div class="container ">
+        <div class="row">
+          <a href="https://www.instagram.com/kartik_khanna0406/" class="tooltipped btn-floating btn-small black darken-4 marginlinks " data-position="bottom" data-tooltip="Instagram"> 
+          <i class="fab fa-instagram"></i>
+        </a>
+          <a href="https://github.com/kartik0406" class="tooltipped btn-floating btn-small black darken-4" data-position="bottom" data-tooltip="Github"> 
+          <i class="fab fa-github"></i>
+        </a>
+          <a href="https://www.linkedin.com/in/kartik-khanna-b58914143/" class="tooltipped btn-floating btn-small black darken-4" data-position="bottom" data-tooltip="Linked"> 
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form>
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">date_range</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Agree to terms and conditions</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+ <footer class="page-footer grey darken-4">
+
+  <div class="footer-copyright grey darken-4">
+    <div class="container center-align">&copy; 2020 Kartik Khanna</div>
+  </div>
+ </footer>
+  <!-- footer -->
+  
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+ <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+    });
+  </script>
+</body>
+</html>
